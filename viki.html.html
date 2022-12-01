@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Time</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    </head>
+    <body>
+        <section id="top">
+            <div class="titleContent">
+                <div class="title">
+                    <h1>Movie</h1>
+                    <h1>Hours</h1>
+                </div>
+            </div>
+
+            <!----description page------->
+            <div class="discription"></div>
+
+            <div class="searchBox">
+                <div class="searchInput">
+                    <div class="searchFilter">
+                        <select>
+                            <option value="movie">Movies</option>
+                            <option value="series">Series</option>
+                            <option value="episode">Episode</option>               
+                         </select>
+                    </div>
+                    <input type="text" placeholder="Enter Movie Name">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="carousel">
+            <div class="previous"><i class="fas fa-chevron-left"></i></div>
+            <div class="movieList">
+            </div>
+            <div class="next"><i class="fas fa-chevron-right"></i></div>
+        </section>
+        <section id="footer">
+            <div class=""></div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

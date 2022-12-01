@@ -1,0 +1,781 @@
+
+body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    background-color:black;
+    position: relative;
+}
+
+
+/*width*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+/*Track*/
+::-webkit-scrollbar-track {
+  background: black;
+}
+/*Handle*/
+::-webkit-scrollbar-thumb {
+  background:white;
+}
+/*Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+  background: #cc5333;
+}
+
+**::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* page 1 the interface */
+
+.backgroundImg img{
+    width:100%;  
+    display: block; 
+}
+.backgroundImg{
+    position: realtive;
+}
+.page1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)) ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    padding: 10px 0 0 60px;
+    color: red;
+    font-size: 43px;
+    transition: 0.3s;
+    text-shadow:5px 5px 5px black ;
+    font-family: 'Audiowide', cursive;
+
+}
+.heading:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.languages{
+    margin-right: 90px; 
+    font-size: 16px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.content{
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    width: 90%;
+}
+.mainHeading{
+    font-size: 55px;
+    width: 60%;
+    margin: auto;
+    font-weight:bolder;
+}
+.content button{
+    font-size: 40px;
+    background-color: red;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    margin-top: 10px;
+    transition: 0.4s;
+    box-shadow:10px 10px 20px black ;
+} 
+.content button:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+    color: black;
+}
+
+
+
+/* page 2 */
+
+.page2{
+    display: none;
+}
+
+.fakeSearchEngine{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 80px; 
+}
+
+
+ .searchEngine{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 180px;
+}
+.type{
+    height: 49px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 3px;
+    border: 1px solid white;
+}
+.nameInput::placeholder{
+     text-transform: capitalize;
+}
+.nameInput{
+    width: 420px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(97, 95, 95);
+    color: black;
+    border: 1px solid white;
+    margin-right: 3px;
+}
+.nameInput::placeholder{
+    color: black;
+}
+.searchButton{
+    border: 1px solid white;
+    padding: 10px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageNO{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: red;
+    font-weight:bolder;
+    width:10%;
+    border-radius: 5px;
+    font-size: 20px;
+    margin:  50px auto 10px auto;
+    display: none;
+}
+.pageNO p:last-child{
+    padding-left: 3px;
+}
+.pageNO p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cardSection{
+    width: 95%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 20px auto 50px  ;
+}
+.cardSection i{
+    background-color: rgb(97, 95, 95);
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+}
+.movieCard{
+    display: flex;
+    align-items: stretch;
+    background-color: black;
+}
+.list{
+    display: flex;
+}
+.card1{
+    width: 97%;
+    transition: 0.5s;
+    text-align: center;
+    border-right:3px solid black ;
+}
+.card1:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.card1 img{
+    width:calc(90vw/10);
+    height: 200px;
+    display: block;
+    object-fit:cover;
+}
+.card1 p{
+    width:calc(90vw/10);
+    height:50px;
+    margin: 0;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    background-color: red;
+    padding-top: 2px;
+
+}
+.cardSection i:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.noResult{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.noResult h1{
+    border: rgb(97, 95, 95)  3px solid;
+    padding: 20px 40px;
+    background-color: red;
+    margin-top: 50px;
+    animation: mymove 3s infinite;
+    text-align: center;
+}
+@keyframes mymove {
+    0%   {top: 0px; background: red; color: white; width: 341px;}
+    100% {top: 200px; background:white; color: black; width:355px ;}
+}
+
+
+
+/* page3 */
+
+.section3{
+    display: none;
+}
+
+.page3{
+    display: flex;
+    align-items: stretch;
+    color: black;
+    width: 70%;
+   left: 50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 15px black;
+    position:fixed;
+    z-index: 999;
+}
+.closeButton{
+   position:absolute;
+   top: 0px;
+   right: 0;
+   background-color: white;
+   color: red;
+   padding: 5px 10px;
+   font-size: 18px;
+   border: 2px red solid;
+   transition: 0.3s;
+}
+.closeButton:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.imageDescription{
+    width: 300px;
+    object-fit: cover;
+    border-right: 2px solid black;
+}
+.movieNameHeading{
+    margin-bottom: 0;
+    color: red;
+}
+.movieInfo{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+.movieTimings{
+    display: flex;
+}
+.movieTimings p{
+    padding-right: 5px;
+    border-right: 2px solid black;
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 14px;
+}
+.movieTimings p:last-child{
+    border: none;
+}
+.storyLineInfo{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.directorInfo p{
+    font-size: 17px;
+    font-weight: 600; 
+}
+.directorInfo p span{
+    font-size: 18px;
+    font-weight: 800;
+    padding-right: 4px;
+}
+.director{
+    margin-bottom: 0;
+   
+}
+.actor{
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.office{
+    margin-top: 3px; 
+}
+.trailer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.trailer a {
+    text-decoration: none;
+    color:red;
+    text-decoration: underline;
+}
+.ratingBox{
+    display: flex;
+    align-items: stretch;
+    margin-top: 150px;
+    color:black;
+}
+.internetRating{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 25px;
+    height: 100px;
+}
+.imbdImg{
+    width: 70px;
+    height: 70px;
+}
+.internetRating p{
+    text-decoration: underline;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+
+
+.rottenRating{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    
+}
+.rottenRating p{
+    text-decoration: underline;
+    margin-top: 5px;
+    padding-left: 20px; 
+  
+}
+.rottenImg{
+    width: 80px;
+    height: 70px;
+}
+
+
+@media only screen and (max-width: 575px) {
+   
+   
+/* page1 */
+   
+    .backgroundImg img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .backgroundImg{
+        height: 100vh;
+        position: relative;
+    }
+    .page1{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)) ;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heading{
+        padding: 5px 0 0 10px;
+        color:white;
+        font-size: 27px;
+        transition: 0.3s;
+        text-shadow:5px 5px 5px black ;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .languages{
+        margin-right: 10px; 
+        font-size: 15px;
+        padding-top: 7px;
+        background-color:white;
+        color:black;
+    }
+    .content{
+        text-align: center;
+        margin-top: 85px;
+        width: 85%;
+    }
+    .mainHeading{
+        font-size: 30px;
+        width: 100%;
+        margin: auto;
+        font-weight:bolder;
+        padding: 0 10px 0 10px;
+    }
+    .secondHeading{
+        font-size: 25px;
+    }
+    .thirdHeading{
+        font-size: 22px;
+    }
+    .content button{
+        font-size: 28px;
+        padding: 15px 15px 15px 15px;
+    } 
+ 
+    
+
+    /* page2 */
+.languagesPage2 {
+    display: none;
+}    
+.fakeSearchEngine{
+     display: block;
+    text-align: center;
+     margin: 80px auto 0px; 
+}
+ .searchEngine{
+    display: block;
+     text-align: center;
+    margin: 140px auto 0px; 
+}
+/* #searchType{
+    position: fixed;
+    top: 17px;
+    right:10px;
+    font-size: 15px;
+    padding: 0 0 0 4px;
+    background-color:white;
+    color:black;
+} */
+.headingPage2{
+    color: red;
+}
+.type{
+    position: fixed;
+    top: 17px;
+    right:10px;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    margin-right: 3px;
+    border: 1px solid white;
+}
+.nameInput::placeholder{
+     text-transform: capitalize;
+}
+.nameInput{
+    width: 200px;
+    padding: 10px 20px 10px ;
+    font-size:19px;
+    border: none;
+    background-color: rgb(97, 95, 95);
+    color: black;
+    border: 1px solid white;
+    margin-right: 3px;
+}
+.nameInput::placeholder{
+    color: black;
+}
+.searchButton{
+    border: 1px solid white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline;
+    width: 10%;
+}
+.pageNO{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: red;
+    font-weight:bolder;
+    width:30%;
+    border-radius: 5px;
+    font-size: 20px;
+    margin:  50px auto 10px auto;
+    display: none;
+}
+.pageNO p:last-child{
+    padding-left: 3px;
+}
+.pageNO p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.cardSection{
+    width: 95%;
+    display: block;
+    margin: 20px auto 50px  ;
+    position: relative;
+}
+.cardSection i{
+    background-color: rgb(97, 95, 95);
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none; 
+    position:absolute;
+}
+.prev{
+    left:35%;
+    bottom: -30px;
+}
+.next{
+    right:35%;
+    bottom: -30px;
+}
+.movieCard{
+    display: flex;
+    align-items: stretch;
+    background-color: black;
+    width: 45%;
+    margin-bottom: 15px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card1{
+    width: 100%;
+    transition: 0.5s;
+    text-align: center;
+    border-right:3px solid black ;
+}
+.card1:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.card1 img{
+    width:100%;
+    height: 200px;
+    display: block;
+    object-fit:cover;
+}
+.card1 p{
+    width:100%;
+    height:50px;
+    margin: 0;
+    font-size: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    background-color: red;
+    padding-top: 2px;
+
+}
+.cardSection i:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.noResult{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.noResult h1{
+    border: rgb(97, 95, 95)  3px solid;
+    padding: 20px 40px;
+    background-color: red;
+    margin-top: 50px;
+    animation: mymove 3s infinite;
+    text-align: center;
+}
+@keyframes mymove {
+    0%   {top: 0px; background: red; color: white; width: 231px;}
+    100% {top: 200px; background:white; color: black; width:255px ;}
+}
+
+
+/* 3pagge */
+
+.section3{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+
+.page3{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0,0);
+    display:block ;
+    color: black;
+    width: 80%;
+    box-shadow: 10px 10px 15px black;
+    z-index: 999;
+}
+.closeButton{
+   position:absolute;
+   top: 0px;
+   right: 0;
+   background-color: white;
+   color: red;
+   padding: 5px 10px;
+   font-size: 18px;
+   border: 2px red solid;
+   transition: 0.3s;
+}
+.closeButton:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.imageDescription{
+    width: 300px;
+    object-fit: cover;
+    border-right: 2px solid black;
+}
+.movieNameHeading{
+    margin-bottom: 5px;
+    color: red;
+    font-size: 25px;
+}
+.movieInfo{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+.movieTimings{
+    display: block;
+}
+.movieTimings p{
+    padding-right: 5px;
+    border-right: none;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.movieTimings p:last-child{
+    border: none;
+}
+.movieTimings p:first-child{
+    margin-top: 23px;
+}
+.storyLineInfo{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 60px 0;
+    
+}
+.directorInfo p{
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 10px; 
+}
+.directorInfo p span{
+    font-size: 18px;
+    font-weight: 800;
+    padding-right: 4px;
+}
+.director{
+    margin-bottom: 0;
+   
+}
+.actor{
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.office{
+    margin-top: 3px; 
+}
+.trailer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.trailer a {
+    text-decoration: none;
+    color:red;
+    text-decoration: underline;
+}
+.ratingBox{
+    display: flex;
+    align-items: stretch;
+    margin-top: 150px;
+    color:black;
+}
+.internetRating{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 25px;
+    height: 100px;
+}
+.imbdImg{
+    width: 70px;
+    height: 70px;
+}
+.internetRating p{
+    text-decoration: underline;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+
+
+.rottenRating{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    
+}
+.rottenRating p{
+    text-decoration: underline;
+    margin-top: 5px;
+    padding-left: 20px; 
+  
+}
+.rottenImg{
+    width: 80px;
+    height: 70px;
+}
+
+
+  }
