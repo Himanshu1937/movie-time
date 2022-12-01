@@ -22,7 +22,7 @@
  function getMovies(page){
      console.log(page)
     let query = $(".nameInput").val()
-    url = `http://www.omdbapi.com/?s=${query}&page=${page}&type=${$("#searchType").val()}&apikey=16aaff8a`
+    url = `https://www.omdbapi.com/?s=${query}&page=${page}&type=${$("#searchType").val()}&apikey=16aaff8a`
     fetch(url).then(Response=>{
         return  Response.json();
     }).then(data=>{
@@ -94,7 +94,7 @@ $(document).on("click",".card1", function(){
 
 
 function getMovieBYId(id){
-    url =  `http://www.omdbapi.com/?i=${id}&apikey=16aaff8a`
+    url =  `https://www.omdbapi.com/?i=${id}&apikey=16aaff8a`
     fetch(url).then(res=>{
         return res.json();
     }).then(data=>{

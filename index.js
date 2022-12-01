@@ -10,7 +10,7 @@ var currentPage = 1;
 var totalPages = 0;
 
 function getMovies(page=1){
-    fetch(` http://www.omdbapi.com/?s=${$(".searchInput input").val()}&type=${$("#top .searchFilter select").val()}&page=${page}&apikey=3bf80026`).then(res=> res.json())
+    fetch(` https://www.omdbapi.com/?s=${$(".searchInput input").val()}&type=${$("#top .searchFilter select").val()}&page=${page}&apikey=3bf80026`).then(res=> res.json())
     .then(data => {
         console.log(data);
         $(".cardSection").empty()
@@ -63,7 +63,7 @@ $(".previous").on("click",function(){
 })
 
 function getMovieBYId(id){
-    fetch(`http://www.omdbapi.com/?i=${id}&apikey=3bf80026`).then(res => res.json() ).then(
+    fetch(`https://www.omdbapi.com/?i=${id}&apikey=3bf80026`).then(res => res.json() ).then(
         data => {
             console.log(data)
             $(".discription").empty()
